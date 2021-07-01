@@ -8,6 +8,7 @@ import {
   createSwitchNavigator,
   createAppContainer,
   createStackNavigator,
+  createBottomTabNavigator,
 } from "react-navigation";
 
 // screen imports
@@ -85,3 +86,37 @@ const OffTabConfig = {
   Routine: RoutineScreen,
   ActiveRoutine: ActiveRoutineScreen,
 };
+
+//NAVIGATORS
+
+// -BOTTOM TAB NAVIGATOR
+const AppTabNavigator = createBottomTabNavigator(BottomTabConfig, {
+  initialRouteName: "Home",
+});
+
+// -AUTH NAVIGATOR
+const AuthStack = createStackNavigator(AuthStackConfig, {
+  headerMode: "none",
+  initialRouteName: "landing",
+});
+
+const OffTabSwitch = createSwitchNavigator(OffTabConfig);
+
+const MainApp = createStackNavigator(
+  {
+    App: AppTabNavigator,
+    OffTab: OffTabSwitch,
+  },
+  { initialRouteName: "App", headerMode: "none" }
+);
+
+const AppSwitch = createSwitchNavigator(
+  {
+    AuthLoading: AuthLoadingScreen,
+    App: MainApp,
+    Auth: AuthStack,
+  },
+  {
+    initialRouteName: Auth,
+  }
+);
