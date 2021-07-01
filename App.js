@@ -7,7 +7,8 @@ import AppContainer from "./navigation/navigation";
 export default function App() {
   return (
     <View style={styles.container}>
-      <AppConatiner />
+      <Text> Starts</Text>
+      <AppContainer />
     </View>
   );
 }

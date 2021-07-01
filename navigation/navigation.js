@@ -8,8 +8,9 @@ import {
   createSwitchNavigator,
   createAppContainer,
   createStackNavigator,
-  createBottomTabNavigator,
 } from "react-navigation";
+
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 // screen imports
 /* 
