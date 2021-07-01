@@ -51,7 +51,7 @@ import {
   ProfileScreen,
   ExercisesScreen,
   ExerciseScreen,
-} from "../screens/app";
+} from "../screens/app/appExports";
 
 // CONFIGS
 const AuthStackConfig = {
