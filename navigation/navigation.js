@@ -27,3 +27,24 @@ exersice
 routine 
 active routine thing
 */
+
+// CONFIGS
+const AuthStackConfig = {
+  Landing: LandingScreen,
+  SignUp: SignUpScreen,
+  Login: LoginScreen,
+};
+
+const BottomTabConfig = {
+  Stats: {},
+  Home: {},
+  Profile: {},
+};
+
+const OffTabConfig = {
+  CreateRoutine: CreateRoutineScreen,
+  Excersices: ExcersicesScreen,
+  Excersice: ExcersiceScreen,
+  Routine: RoutineScreen,
+  ActiveRoutine: ActiveRoutineScreen,
+};
