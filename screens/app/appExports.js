@@ -13,7 +13,6 @@ export {
   CreateRoutineScreen,
   ExerciseScreen,
   ExercisesScreen,
-  ExercisesScreen,
   HomeScreen,
   ProfileScreen,
   StatsScreen,

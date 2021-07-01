@@ -39,7 +39,7 @@ import {
   LoginScreen,
   SignUpScreen,
   AuthLoadingScreen,
-} from "../screens/auth";
+} from "../screens/auth/authExports";
 
 // --APP
 import {
