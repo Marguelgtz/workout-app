@@ -141,3 +141,5 @@ const AppSwitch = createSwitchNavigator(
     initialRouteName: Auth,
   }
 );
+
+export default createAppContainer(AppSwitch);
