@@ -32,6 +32,27 @@ routine
 active routine thing
 */
 
+// IMPORT SCREENS
+// --AUTH
+import {
+  LandingScreen,
+  LoginScreen,
+  SignUpScreen,
+  AuthLoadingScreen,
+} from "../screens/auth";
+
+// --APP
+import {
+  ActiveRoutineScreen,
+  RoutineScreen,
+  CreateRoutineScreen,
+  HomeScreen,
+  StatsScreen,
+  ProfileScreen,
+  ExercisesScreen,
+  ExerciseScreen,
+} from "../screens/app";
+
 // CONFIGS
 const AuthStackConfig = {
   Landing: LandingScreen,
@@ -81,8 +102,8 @@ const BottomTabConfig = {
 
 const OffTabConfig = {
   CreateRoutine: CreateRoutineScreen,
-  Excersices: ExcersicesScreen,
-  Excersice: ExcersiceScreen,
+  Excersice: ExerciseScreen,
+  Excersices: ExercisesScreen,
   Routine: RoutineScreen,
   ActiveRoutine: ActiveRoutineScreen,
 };
